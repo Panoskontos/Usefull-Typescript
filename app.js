@@ -12,8 +12,9 @@ var b = "Nik";
 var c = true;
 var e = {};
 // void means it can be either undefined or null 
-var g = null;
+var g = undefined;
 // anything
 var h = "j";
 // allow any type of array
 var i = ["billy", 23];
+var k = ["23"];
