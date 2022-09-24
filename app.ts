@@ -7,7 +7,7 @@ game= 'Basketball';
 
 
 function print(game:string){
-    console.log(`Billy got 20 points in his last ${game} game`);
+    console.log(`Billy got 20 points in his last ${game} game `);
 }
 
 print(game);
