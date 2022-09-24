@@ -26,3 +26,5 @@ let h: any = "j";
 
 // allow any type of array
 let i: any[] = [ "billy", 23];
+
+let k: Array<string> = ["23"];
