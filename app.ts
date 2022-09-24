@@ -11,3 +11,18 @@ function print(game:string){
 }
 
 print(game);
+
+
+let a = 1;
+let b: string = "Nik";
+let c: boolean = true;
+let e: object = {};
+
+// void means it can be either undefined or null 
+let g: void = null;
+
+// anything
+let h: any = "j";
+
+// allow any type of array
+let i: any[] = [ "billy", 23];
