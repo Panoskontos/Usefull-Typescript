@@ -19,7 +19,7 @@ let c: boolean = true;
 let e: object = {};
 
 // void means it can be either undefined or null 
-let g: void = null;
+let g: void = undefined;
 
 // anything
 let h: any = "j";
