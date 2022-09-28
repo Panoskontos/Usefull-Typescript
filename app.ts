@@ -14,8 +14,8 @@ print(game);
 
 
 let a = 1;
-let b: string = "Nik";
-let c: boolean = true;
+let b = "Nik";
+let c = true;
 let e: object = {};
 
 // void means it can be either undefined or null 
