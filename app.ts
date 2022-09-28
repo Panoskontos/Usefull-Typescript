@@ -6,11 +6,7 @@ game= 'Basketball';
 
 
 
-function print(game:string){
-    console.log(`Billy got 20 points in his last ${game} game `);
-}
 
-print(game);
 
 
 let a = 1;
@@ -28,3 +24,11 @@ let h: any = "j";
 let i: any[] = [ "billy", 23];
 
 let k: Array<string> = ["23"];
+
+// arrow functions
+
+let  print = (name:string) =>{
+    console.log(`${name} is a beast`);
+}
+
+print("panos");
