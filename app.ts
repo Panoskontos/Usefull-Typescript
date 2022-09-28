@@ -30,3 +30,26 @@ let double = (number:number) => number*2;
 
 print("panos","28","CT");
 console.log(double(10));
+
+
+// interfaces
+let user = {
+    name:"Panos",
+    state:"CT",
+    age:31,
+    city:"ATH"
+};
+
+// creating interface to make sure the right data are being passed down 
+interface UserData{
+    name:string;
+    state:string;
+    age:number;
+    city:string;
+}
+
+let welcome = (user: UserData) =>{
+    console.log(`Welcome ${user.name} to the city of ${user.city}`);
+};
+
+welcome(user);

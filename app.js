@@ -21,3 +21,14 @@ var print = function (name, age, location) {
 var double = function (number) { return number * 2; };
 print("panos", "28", "CT");
 console.log(double(10));
+// interfaces
+var user = {
+    name: "Panos",
+    state: "CT",
+    age: 31,
+    city: "ATH"
+};
+var welcome = function (user) {
+    console.log("Welcome ".concat(user.name, " to the city of ").concat(user.city));
+};
+welcome(user);
