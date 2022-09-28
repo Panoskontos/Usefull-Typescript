@@ -37,7 +37,8 @@ let user = {
     name:"Panos",
     state:"CT",
     age:31,
-    city:"ATH"
+    city:"ATH",
+    job:"dev"
 };
 
 // creating interface to make sure the right data are being passed down 

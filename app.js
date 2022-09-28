@@ -26,7 +26,8 @@ var user = {
     name: "Panos",
     state: "CT",
     age: 31,
-    city: "ATH"
+    city: "ATH",
+    job: "dev"
 };
 var welcome = function (user) {
     console.log("Welcome ".concat(user.name, " to the city of ").concat(user.city));
