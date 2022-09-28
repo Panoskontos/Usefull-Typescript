@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var newLocal = 'Pit';
+var newLocal = "Pit";
 var game;
-game = 'Basketball';
+game = "Basketball";
 var a = 1;
 var b = "Nik";
 var c = true;
@@ -15,7 +15,9 @@ var h = "j";
 var i = ["billy", 23];
 var k = ["23"];
 // arrow functions
-var print = function (name) {
+var print = function (name, age, location) {
     console.log("".concat(name, " is a beast"));
 };
-print("panos");
+var double = function (number) { return number * 2; };
+print("panos", "28", "CT");
+console.log(double(10));

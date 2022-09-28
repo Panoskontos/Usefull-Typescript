@@ -1,13 +1,8 @@
 export {};
-const newLocal = 'Pit';
+const newLocal = "Pit";
 let game: string;
 
-game= 'Basketball';
-
-
-
-
-
+game= "Basketball";
 
 let a = 1;
 let b = "Nik";
@@ -27,8 +22,11 @@ let k: Array<string> = ["23"];
 
 // arrow functions
 
-let  print = (name:string) =>{
+let  print = (name:string, age:string, location:string) =>{
     console.log(`${name} is a beast`);
-}
+};
 
-print("panos");
+let double = (number:number) => number*2;
+
+print("panos","28","CT");
+console.log(double(10));
