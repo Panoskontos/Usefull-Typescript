@@ -71,3 +71,4 @@ class User {
 }
 
 let user1 = new User("Marinos","SKG", 24);
+let user2 = new User("Panos","ATH", 26);

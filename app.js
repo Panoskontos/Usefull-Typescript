@@ -44,3 +44,4 @@ var User = /** @class */ (function () {
     return User;
 }());
 var user1 = new User("Marinos", "SKG", 24);
+var user2 = new User("Panos", "ATH", 26);
