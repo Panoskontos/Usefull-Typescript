@@ -58,7 +58,8 @@ welcome(user);
 
 // classes
 class User {
-    name:string;
+    // public or private means that whether you want people to be able to change it
+    private name:string;
     state:string;
     age:number;
 
@@ -77,6 +78,9 @@ class User {
 
 let user1 = new User("Marinos","SKG", 24);
 user1.printStatus();
+
 let user2 = new User("Panos","ATH", 26);
+// if value is not private we can change it
+user2.state = "NYC";
 user2.printStatus();
 
