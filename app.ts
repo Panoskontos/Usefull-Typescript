@@ -91,5 +91,6 @@ let user2 = new User("Panos");
 // if value is not private we can change it
 // user2.state = "NYC";
 
+
 user2.printStatus();
 
