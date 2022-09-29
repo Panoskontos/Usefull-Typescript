@@ -83,10 +83,13 @@ class User {
 }
 
 let user1 = new User("Marinos","SKG", 24);
+
 user1.printStatus();
 
 let user2 = new User("Panos","ATH", 26);
+
 // if value is not private we can change it
 user2.state = "NYC";
+
 user2.printStatus();
 
