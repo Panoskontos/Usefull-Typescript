@@ -68,7 +68,15 @@ class User {
         this.age=age;
         console.log("created new user "+this.name);
     }
+
+    // Methods
+    printStatus = () => {
+        console.log(`Hey ${this.name} do you like ${this.state}`);
+    }
 }
 
 let user1 = new User("Marinos","SKG", 24);
+user1.printStatus();
 let user2 = new User("Panos","ATH", 26);
+user2.printStatus();
+

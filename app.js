@@ -36,6 +36,11 @@ welcome(user);
 // classes
 var User = /** @class */ (function () {
     function User(name, state, age) {
+        var _this = this;
+        // Methods
+        this.printStatus = function () {
+            console.log("Hey ".concat(_this.name, " do you like ").concat(_this.state));
+        };
         this.name = name;
         this.state = state;
         this.age = age;
@@ -44,4 +49,6 @@ var User = /** @class */ (function () {
     return User;
 }());
 var user1 = new User("Marinos", "SKG", 24);
+user1.printStatus();
 var user2 = new User("Panos", "ATH", 26);
+user2.printStatus();
