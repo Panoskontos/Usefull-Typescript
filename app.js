@@ -46,8 +46,8 @@ var User = /** @class */ (function () {
             console.log(_this.name);
         };
         this.name = name;
-        this.state = state;
-        this.age = age;
+        this.state = state == undefined ? "CHG" : state;
+        this.age = age == undefined ? 21 : age;
         console.log("created new user " + this.name);
         this.printName();
     }
@@ -55,7 +55,7 @@ var User = /** @class */ (function () {
 }());
 var user1 = new User("Marinos", "SKG", 24);
 user1.printStatus();
-var user2 = new User("Panos", "ATH", 26);
+var user2 = new User("Panos");
 // if value is not private we can change it
-user2.state = "NYC";
+// user2.state = "NYC";
 user2.printStatus();

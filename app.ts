@@ -63,10 +63,10 @@ class User {
     state:string;
     age:number;
 
-    constructor(name:string, state:string, age:number){
+    constructor(name:string, state?:string, age?:number){
         this.name=name;
-        this.state=state;
-        this.age=age;
+        this.state = state == undefined ? "CHG" : state;
+        this.age=age == undefined ? 21 : age;
         console.log("created new user "+this.name);
         this.printName();
     }
@@ -86,10 +86,10 @@ let user1 = new User("Marinos","SKG", 24);
 
 user1.printStatus();
 
-let user2 = new User("Panos","ATH", 26);
+let user2 = new User("Panos");
 
 // if value is not private we can change it
-user2.state = "NYC";
+// user2.state = "NYC";
 
 user2.printStatus();
 
