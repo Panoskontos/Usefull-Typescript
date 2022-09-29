@@ -21,7 +21,7 @@ var print = function (name, age, location) {
 var double = function (number) { return number * 2; };
 print("panos", "28", "CT");
 console.log(double(10));
-// interfaces
+// object
 var user = {
     name: "Panos",
     state: "CT",
@@ -33,3 +33,14 @@ var welcome = function (user) {
     console.log("Welcome ".concat(user.name, " to the city of ").concat(user.city));
 };
 welcome(user);
+// classes
+var User = /** @class */ (function () {
+    function User(name, state, age) {
+        this.name = name;
+        this.state = state;
+        this.age = age;
+        console.log("created new user " + this.name);
+    }
+    return User;
+}());
+var user1 = new User("Marinos", "SKG", 24);

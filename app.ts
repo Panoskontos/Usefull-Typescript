@@ -31,8 +31,7 @@ let double = (number:number) => number*2;
 print("panos","28","CT");
 console.log(double(10));
 
-
-// interfaces
+// object
 let user = {
     name:"Panos",
     state:"CT",
@@ -41,6 +40,7 @@ let user = {
     job:"dev"
 };
 
+// interfaces
 // creating interface to make sure the right data are being passed down 
 interface UserData{
     name:string;
@@ -54,3 +54,20 @@ let welcome = (user: UserData) =>{
 };
 
 welcome(user);
+
+
+// classes
+class User {
+    name:string;
+    state:string;
+    age:number;
+
+    constructor(name:string, state:string, age:number){
+        this.name=name;
+        this.state=state;
+        this.age=age;
+        console.log("created new user "+this.name);
+    }
+}
+
+let user1 = new User("Marinos","SKG", 24);
