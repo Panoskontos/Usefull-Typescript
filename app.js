@@ -41,10 +41,15 @@ var User = /** @class */ (function () {
         this.printStatus = function () {
             console.log("Hey ".concat(_this.name, " do you like ").concat(_this.state));
         };
+        // when method is private it's accesible only inside class
+        this.printName = function () {
+            console.log(_this.name);
+        };
         this.name = name;
         this.state = state;
         this.age = age;
         console.log("created new user " + this.name);
+        this.printName();
     }
     return User;
 }());
