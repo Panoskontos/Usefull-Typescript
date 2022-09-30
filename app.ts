@@ -73,13 +73,16 @@ class User {
 
     // Methods
     printStatus = () => {
-        console.log(`Hey ${this.name} do you like ${this.state}`);
+        console.log(`Hey ${this.name} at the age of ${this.age} did you like ${this.state}`);
     }
 
     // when method is private it's accesible only inside class
     private printName = () =>{
         console.log(this.name);
     }
+
+
+    
 }
 
 let user1 = new User("Marinos","SKG", 24);
